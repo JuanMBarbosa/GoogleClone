@@ -16,7 +16,6 @@ header
 {
     width: 100%;
     height: 60px;
-    background-color: aqua;
 }
 
 header nav
@@ -41,6 +40,12 @@ nav .nav-right-section a
     color: #000000;
 }
 
+nav .nav-right-section a:hover
+{
+    text-decoration: underline;
+}
+
+
 nav .nav-right-section .menu-icon
 {
     background-image: url("https://static.thenounproject.com/png/756729-200.png");
@@ -48,6 +53,13 @@ nav .nav-right-section .menu-icon
     background-size: contain;
     width: 25px;
     height: 25px;
+    cursor: pointer;
+}
+
+nav .nav-right-section .menu-icon:hover
+{
+    background-color: #ebecec;
+    border-radius: 50%;
 }
 
 nav .nav-right-section img
@@ -154,4 +166,50 @@ main .main-buttons button
     color: #222;
     background-color: #f8f8f8;
 }
+
+
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul
+{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left
+{
+    justify-self: left;
+}
+
+footer .footer-right
+{
+    justify-self: right;
+}
+
+footer ul li a
+{
+    margin: 10px;
+    color: #5f6368;
+}
+
+footer ul li a:hover
+{
+    text-decoration: underline;
+}
+
 
